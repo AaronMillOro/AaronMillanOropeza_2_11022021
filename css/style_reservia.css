@@ -11,6 +11,8 @@ html {
 a {
 	text-decoration: none;
 }
+
+/* Header style */
 header {
 	display: flex;
 	justify-content: space-between;
@@ -45,4 +47,36 @@ nav {
 }
 .btn_nav2:hover{
 	border-top: solid 0.2em #000000;
+}
+
+/* Filters section */
+#filters{
+	display: flex;
+	flex-direction: column;
+}
+.box1{
+	margin: 0.4em 0.5em;
+}
+h1{
+	font-size: 1.5em;
+	font-weight: 500;
+}
+.reg_text {
+	font-style: normal;
+	font-size: 1em;
+	padding: 0.2em 0.2em;
+}
+#search_item {
+	flex: 1;
+}
+#filter_options{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.filter{
+	padding: 0.2em 0.2em;
+}
+#available_places{
+	flex: 1;
 }
