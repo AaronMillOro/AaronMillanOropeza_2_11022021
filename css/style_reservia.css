@@ -1,7 +1,48 @@
 @font-face{ 
 	font-family: "Railway";
-	src: url("Railway-webfont.eot");
-	src: url("Railway-webfont.svg") format("woff"),
-	     url("Railway-webfont.ttf") format("truetype"),
-	     url("Railway-webfont.svg") format("svg");
+	src: url("../fonts/Railway-webfont.eot");
+	src: url("../fonts/Railway-webfont.svg") format("woff"),
+	     url("../fonts/Railway-webfont.ttf") format("truetype"),
+	     url("../fonts/Railway-webfont.svg") format("svg");
+}
+html {
+	font-family: "Railway";
+}
+a {
+	text-decoration: none;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+}
+nav {
+	display: flex;
+	justify-content: space-evenly;
+}
+#logo {
+	margin: 0.5em 0.5em;
+	width: 10%;
+	height: auto;
+}
+.btn_nav1 {
+	font-size: 1em;
+	padding: 1.5em 1.75em;
+	color: #0065FC;
+}
+.btn_nav2 {
+	font-size: 1em;
+	padding: 1.5em 1.75em;
+	color: #000000;
+}
+.btn_nav3 {
+	font-size: 1em;
+	font-weight: bold;
+	padding: 1.5em 1.75em;
+	color: #0065FC;
+}
+.btn_nav1:hover, .btn_nav3:hover{
+	border-top: solid 0.2em #0065FC;
+}
+.btn_nav2:hover{
+	border-top: solid 0.2em #000000;
 }
