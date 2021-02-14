@@ -179,7 +179,7 @@ h2{
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  padding: 1em 1em 0.3em 1em;
+  padding: 1em 1em 0.3em 1.5em;
 }
 #populars{
   display: flex;
@@ -188,13 +188,15 @@ h2{
   order: 2;
   background-color: #F2F2F2;
   margin: 0.5em;
-  flex-grow: 1;
+  flex-grow: 2s;
   border-radius: 1.5em;
+  min-width: 350px;
 }
 .pop_card{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  align-items: center;
   background-color: #FFFFFF;
   border-radius: 1.5em;
   margin: 0em;
@@ -206,9 +208,11 @@ h2{
   padding: 1em;
 }
 .pic_pop{
+  display: flex;
+  flex-direction: row;
   object-fit: cover;
   width: 127px;
-  height: 133px;
+  height: 150px;
   border-top-left-radius: 1em;
   border-bottom-left-radius: 1em;
 }
@@ -227,7 +231,7 @@ h2{
 #places{
   display: flex;
   flex-direction: column;
-  flex-grow: 4;
+  flex-grow: 3;
   order: 1;
   background-color: #F2F2F2;
   margin: 0.5em 1em 0.5em 0.5em;
@@ -253,8 +257,11 @@ h2{
   box-shadow: 0em 0em 0.15em #acacac;
 }
 .pic_place{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
   object-fit: cover;
-  width: 238px;
+  width: 240px;
   height: 115px;
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
