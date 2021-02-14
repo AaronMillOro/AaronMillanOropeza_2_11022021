@@ -130,6 +130,28 @@ h1{
 	border: 0.2em solid #F2F2F2;
   border-radius: 2em;
 }
+.filter_button:hover{
+	text-decoration: none;
+	font-size: 1em;
+	background-color: #0065FC;
+	color: #FFFFFF;
+  font-weight: normal;
+	padding: 0.6em 0.6em 0.6em 2.5em;
+	border: 0.2em solid #F2F2F2;
+  border-radius: 2em;
+	transition: 700ms ease;
+}
+.filter:hover .icon{
+	align-self: center;
+  padding: 0.6em;
+	color: #000000;
+  background-color: #F2F2F2;
+  border: 0.1em solid #F2F2F2;
+  border-radius: 50%;
+	position: relative;
+	left: 2.5em;
+	transition: 700ms ease;
+}
 #available_places{
 	padding: 0em;
 }
