@@ -171,45 +171,77 @@ h1{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  flex-wrap: wrap;
   margin: 0.3em 0.5em;
-  padding: 0.5em;
+  padding: 0.8em;
 }
 h2{
   font-size: 1.2em;
   font-weight: 400;
 }
+.block{
+  padding: 1em;
+}
 #populars{
   order: 2;
   background-color: #F2F2F2;
-	margin: 0.5em;
-	flex-grow: 1;
+  margin: 0.5em;
+  flex-grow: 1;
+  border-radius: 1.5em;
 }
 #places{
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 4;
   order: 1;
-	flex-grow: 4;
   background-color: #F2F2F2;
   margin: 0.5em;
+  border-radius: 1.5em;
 }
 .block_cards{
-	display: flex;
-	flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5em 1em;
+}
+.link_card{
+  color: #000000;
+  text-decoration: none;
 }
 .place_card{
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  border-radius: 1.5em;
+  padding: 0.4em;
+  box-shadow: 0em 0em 0.15em #acacac;
+}
+.pic_place{
+  object-fit: cover;
+  width: 238px;
+  height: 115px;
+  border-top-left-radius: 1.5em;
+  border-top-right-radius: 1em;
+}
+.rank_place{
+  font-size: 0.8em;
+  padding: 0.5em 0.5em;
+  color: #0065FC;
+}
+.empty_star{
+  color: #b1b1b1;
+}
+.more{
+  margin-bottom: 1em;
 }
 .pop_card{
-	display: flex;
-	flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 #activities{
   display: flex;
   flex-direction: column;
-	padding: 1em;
-	margin: 0.8em 1em;
+  padding: 1em;
+  margin: 0.8em 1em;
 }
 footer{
   display: flex;
