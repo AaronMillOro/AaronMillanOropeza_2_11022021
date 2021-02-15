@@ -349,7 +349,16 @@ h2{
 footer{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly ;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  column-gap: 15%;
   background-color: #F2F2F2;
+}
+.part{
+  display: flex;
+  flex-direction: column;
+  padding: 1.5em 1em 2em 2em;
+}
+#about, #bookings, #help{
+  padding: 1em 0em;
 }
