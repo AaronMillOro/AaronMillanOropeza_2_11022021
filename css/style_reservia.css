@@ -98,6 +98,7 @@ h1{
   padding: 0.2em 0.2em;
 }
 
+/* Search bar */
 #search-item {
   display: flex;
   flex-direction: row;
@@ -134,70 +135,75 @@ h1{
   padding: 1em;
 }
 
-#filter_text{
-  align-self: center;
-  padding: 0.5em 1em;
-  font-size: 1em;
-}
-#filter_options{
+#filter-options{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.filter{
-  padding: 1.5em 0em 1.5em 0em;
+
+#filter-options span{
+  align-self: center;
 }
+
+/* Filter buttons */
+#filter-options a{
+  padding: 1em 0em 1em 0em;
+  margin: 1em;
+}
+
 .icon{
-  padding: 0.6em;
-  color: #0065FC;
   background-color: #DEEBFF;
   border: 0.1em solid #DEEBFF;
   border-radius: 50%;
+  color: #0065FC;
+  left: 2.3em;
+  padding: 0.6em;
   position: relative;
-  left: 2.5em;
 }
-.filter_button{
-  text-decoration: none;
-  font-size: 1em;
+
+.filter-button{
+  border: 0.1em solid #F2F2F2;
+  border-radius: 2em;
   color: #000000;
-  font-weight: normal;
-  padding: 0.6em 0.6em 0.6em 2.5em;
-  border: 0.2em solid #F2F2F2;
-  border-radius: 2em;
-}
-.filter_button:hover{
-  text-decoration: none;
   font-size: 1em;
-  background-color: #0065FC;
-  color: #FFFFFF;
   font-weight: normal;
-  padding: 0.6em 0.6em 0.6em 2.5em;
-  border: 0.2em solid #F2F2F2;
+  padding: 0.6em 1em 0.6em 2.5em;
+  text-decoration: none;
+}
+
+#filter-options a:hover .filter-button{
+  background-color: #0065FC;
+  border: 0.1em solid transparent;
   border-radius: 2em;
+  color: #FFF;
+  font-size: 1em;
+  font-weight: normal;
+  padding: 0.6em 1em 0.6em 2.5em;
+  text-decoration: none;
   transition: 700ms ease;
 }
-.filter:hover .icon{
-  padding: 0.6em;
-  color: #000000;
+
+#filter-options a:hover .icon{
   background-color: #F2F2F2;
   border: 0.1em solid #F2F2F2;
   border-radius: 50%;
+  color: #000000;
+  left: 2.3em;
+  padding: 0.6em;
   position: relative;
-  left: 2.5em;
   transition: 700ms ease;
 }
-#available_places{
-  padding: 0em;
-}
+
 .mini_icon{
-  font-size: 0.75em;
-  padding: 0.5em 0.5em 0.5em 0.7em;
-  margin: 1em;
-  color: #0065FC;
-  background-color: #FFFFFF;
+  background-color: #FFF;
   border: 0.1em solid #F2F2F2;
   border-radius: 50%;
+  color: #0065FC;
+  font-size: 0.75em;
+  margin-right: 0.5em;
+  padding: 0.5em 0.8em 0.3em 0.9em;
 }
+
 /* Main content style*/
 .box2{
   display: flex;
