@@ -5,57 +5,78 @@
        url("../fonts/Railway-webfont.ttf") format("truetype"),
        url("../fonts/Railway-webfont.svg") format("svg");
 }
+
 *{
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
-}
-html {
-  font-family: "Railway";
-}
-a {
-  text-decoration: none;
-	font-style: normal;
-  font-size: 1em;
+  margin: 0;
+  padding: 0;
 }
 
-/* Header style */
-header {
+html{
+  font-family: "Railway", sans-serif;
+}
+
+/****** DESKTOP STYLE ******/
+
+body{
+  margin: auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+a{
+  font-size: 1em;
+	font-style: normal;
+  text-decoration: none;
+}
+
+/****** Header style ******/
+header{
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
-nav {
-  display: flex;
-  justify-content: space-evenly;
-}
-#logo {
-  margin: 0.5em 0.5em;
-  width: 10%;
+
+header img{
   height: auto;
+  margin: 0.5em 0.5em;
+  width: 10%; 
 }
-.btn_nav1 {
-  font-size: 1em;
-  padding: 1.5em 1.75em;
+
+header nav{
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+header input{
+  background: transparent;
+  border: none;
   color: #0065FC;
-  border-top: solid 0.2em #0065FC;
-}
-.btn_nav2 {
-  font-size: 1em;
-  padding: 1.5em 1.75em;
-  color: #000;
-  border-top: solid 0.2em transparent;
-}
-.btn_nav3 {
   font-size: 1em;
   font-weight: bold;
   padding: 1.5em 1.75em;
-  color: #0065FC;
-  background-color: #FFF;
 }
-.btn_nav1:hover{
+
+.nav-btn1 {
+  border-top: solid 0.2em #0065FC;
+  color: #0065FC;
+  font-size: 1em;
+  padding: 1.5em 1.75em;
+}
+
+.nav-btn2 {
+  border-top: solid 0.2em transparent;
+  color: #000;
+  font-size: 1em;
+  padding: 1.5em 1.75em;
+}
+
+.nav-btn1:hover{
   border-top: solid 0.2em #0065FC;
 }
-.btn_nav2:hover{
+
+.nav-btn2:hover{
   border-top: solid 0.2em #000000;
 }
 
