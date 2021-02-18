@@ -391,19 +391,23 @@ h2{
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
 }
+
+/***** Footer *****/
 footer{
+  background-color: #F2F2F2;
+  column-gap: 10%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  column-gap: 15%;
-  background-color: #F2F2F2;
 }
-.part{
+
+footer div{
   display: flex;
   flex-direction: column;
-  padding: 1.5em 1em 2em 2em;
+  padding: 1em 1em 3em 1em;
 }
-#about, #bookings, #help{
+
+.foot-title{
   padding: 1em 0em;
 }
