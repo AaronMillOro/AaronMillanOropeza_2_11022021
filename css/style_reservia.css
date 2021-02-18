@@ -39,7 +39,7 @@ header{
 
 header img{
   height: auto;
-  margin: 0.5em 0.5em;
+  padding: 1em 0em;
   width: 10%; 
 }
 
@@ -80,57 +80,64 @@ header input{
   border-top: solid 0.2em #000000;
 }
 
-/* Filters section */
-#filters{
+/***** Filters section *****/
+body section{
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
-.box1{
-  margin: 0.3em 0.5em;
-}
+
 h1{
   font-size: 1.5em;
   font-weight: 500;
 }
-.reg_text {
+
+.reg-text {
   font-style: normal;
   font-size: 1em;
   padding: 0.2em 0.2em;
 }
-#search_item {
+
+#search-item {
   display: flex;
   flex-direction: row;
-	margin-left: 1em;
+  height: 2.5em;
+  margin: 1em 0;
 }
-#location_icon{
-  padding: 1em;
+
+#search-item div{
+  align-items: center;
   background-color: #F2F2F2;
-  border: 0.2em solid #F2F2F2;
+  border: 0.1em solid #F2F2F2;
   border-top-left-radius: 1em;
   border-bottom-left-radius: 1em;
+  display: flex;
+  padding: 0 1em;
 }
-#search_bar{
-  border: 0.2em solid #F2F2F2;
-  border-top-right-radius: 1em;
+
+#search-item input{
+  border: 0.1em solid #F2F2F2;
+  border-right: 0.1em solid transparent;
+  min-width: 200px;
+  padding-left: 1em;
+}
+
+#search-item a{
+  align-items: center;
+  background-color: #0065FC;
+  border: 0.1em solid #0065FC;
   border-bottom-right-radius: 1em;
-  min-width: 280px;
+  border-top-right-radius: 1em;
+  color: #FFFFFF;
+  display: flex;
+  font-weight: normal;
+  padding: 1em;
 }
+
 #filter_text{
   align-self: center;
   padding: 0.5em 1em;
   font-size: 1em;
-}
-#search_button{
-  font-size: 1em;
-  font-weight: normal;
-  background-color: #0065FC;
-  color: #FFFFFF;
-  padding: 1em;
-  position: relative;
-  left: -1em;
-  border: 0.2em solid #0065FC;
-  border-top-right-radius: 1em;
-  border-bottom-right-radius: 1em;
 }
 #filter_options{
   display: flex;
