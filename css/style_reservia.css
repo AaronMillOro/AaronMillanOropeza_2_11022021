@@ -322,74 +322,95 @@ h2{
 .more{
   margin-bottom: 1em;
 }
+
+/* Activities */
 #activities{
   display: flex;
   flex-direction: column;
-  margin: 0.3em 0em;
-  padding: 0em;
+  width: 100%;
+  margin: 1.5em 0;
 }
-.box3{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 0em;
-  padding-bottom: 2em;
+
+#activities h2{
+  margin: 1em 0;
 }
-.activity_card1{
-  display: flex;
-  flex-direction: column;
-  background-color: #FFFFFF;
-  border-radius: 1em;
-  padding: 0em;
-  margin: 0.5em;
-  box-shadow: 0em 0em 0.15em #acacac;
+
+#block-activities{
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: "big1 medium1 big2 small2"
+                       "big1 small1 big2 medium2";
 }
-.pic_activity1{
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  object-fit: cover;
-  width: 300px;
+
+.big1{
+  grid-area: big1;
   height: 450px;
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
 }
-.activity_text{
-  padding: 1em;
-}
-.block_activities{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.activity_card2{
-  display: flex;
-  flex-direction: column;
-  background-color: #FFFFFF;
-  border-radius: 1em;
-  padding: 0em;
-  margin: 0.5em;
-  box-shadow: 0em 0em 0.15em #acacac;
-}
-.pic_activity2{
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  object-fit: cover;
-  width: 300px;
+
+.medium1{
+  grid-area: medium1;
   height: 210px;
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
 }
-.pic_activity3{
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  object-fit: cover;
-  width: 300px;
-  height: 150px;
+
+.small1{
+  grid-area: small1;
+  height: 200px
+}
+
+.big2{
+  grid-area: big2;
+  height: 450px;
+}
+
+.small2{
+  grid-area: small2;
+  height: 200px
+}
+
+.medium2{
+  grid-area: medium2;
+  height: 210px;
+}
+
+.activity-card a{
+  text-decoration: none;
+  color: #000;
+  padding: 0;
+  margin: 0;
+}
+
+.activity-card{
+  background-color: #FFF;
+  border-radius: 1em;
+  box-shadow: 0em 0em 0.15em #ACACAC;
+  width: 270px;
+}
+
+.pic-activity{
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
+  object-fit: cover;
+  width: 100%;
+}
+
+.big{
+  height: 390px;
+}
+
+.medium{
+  height: 150px;
+}
+
+.small{
+  height: 140px;
+}
+
+.activity-card a span{
+  padding: 1em;
+  display: flex;
+  align-items: center;
 }
 
 /***** Footer *****/
