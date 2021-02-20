@@ -7,7 +7,6 @@
        url("../fonts/Railway-webfont.svg") format("svg");
 }
 
-
 *{
   box-sizing: border-box;
   margin: 0;
@@ -50,48 +49,61 @@ h1{
 
 /****** Header style ******/
 header{
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: "logo . . nav inscription";
+  justify-content: center;
   width: 100%;
 }
 
 header img{
+  grid-area: logo;
   height: auto;
   padding: 1em 0em;
-  width: 10%; 
+  width: 50%; 
 }
 
 header nav{
   display: flex;
-  flex-grow: 1;
-  justify-content: flex-end;
+  grid-area: nav;
+  justify-content: space-between;
 }
 
-header input{
+header button{
   background: transparent;
   border: none;
   border-top: solid 0.2em transparent;
   color: #0065FC;
+  display: flex;
   font-size: 1em;
   font-weight: bold;
+  grid-area: inscription;
   height: 1.5em;
+  justify-self: center;
   padding: 1.5em 1.75em;
+  min-width: 125px;
 }
 
 .nav-btn1 {
   border-top: solid 0.2em #0065FC;
   color: #0065FC;
+  display: flex;
   font-size: 1em;
   height: 1.5em;
+  justify-content: center;
   padding: 1.5em 1.75em;
+  min-width: 160px;
 }
 
 .nav-btn2 {
   border-top: solid 0.2em transparent;
   color: #000;
+  display: flex;
   font-size: 1em;
   height: 1.5em;
+  justify-content: center;
   padding: 1.5em 1.75em;
+  min-width: 150px;
 }
 
 .nav-btn2:hover{
@@ -461,3 +473,5 @@ footer div{
 .foot-title{
   padding: 1em 0em;
 }
+
+/****** MOBILE STYLE ******/
