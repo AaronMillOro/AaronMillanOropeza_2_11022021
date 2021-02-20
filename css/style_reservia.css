@@ -239,34 +239,33 @@ aside > div{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   margin: 1em 0;
-}
-
-.pop-card{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: #FFFFFF;
-  border-radius: 1.5em;
-  margin: 1em 0em;
-  padding: 0.4em;
-  box-shadow: 0em 0em 0.15em #e9e9e9;
 }
 
 aside > div span{
   font-size: 1.5em;
 }
 
-.pic-pop{
+aside > a > div{
+  align-items: stretch;
+  background-color: #FFF;
+  border-radius: 1.5em;
+  box-shadow: 0em 0em 0.15em #e9e9e9;
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
+  margin: 1em 0em;
+  padding: 0.4em;
+}
+
+aside > a > div > img{
+  border-bottom-left-radius: 1em;
+  border-top-left-radius: 1em;
+  display: flex;
+  flex-direction: row;
+  height: 140px;
   object-fit: cover;
   width: 130px;
-  height: 140px;
-  border-top-left-radius: 1em;
-  border-bottom-left-radius: 1em;
 }
 
 .info-pop{
@@ -277,11 +276,14 @@ aside > div span{
 }
 
 .place-pop{
+  align-items: flex-start;
   padding-top: 1em;
 }
 
 .price-pop{
-  padding-bottom: 2em;
+  align-items: flex-start;
+  flex-grow: 1;
+  padding-top: 0.5em;
 }
 
 /* Section: places*/
@@ -295,12 +297,12 @@ aside > div span{
   padding: 1.5em;
 }
 
-#places h2, #places > span, #activities h2{
+#places h2, #activities h2{
   margin: 1em 0;
 }
 
 #places > span{
-  padding-top: 1.5em;
+  padding-top: 0.5em;
 }
 
 #places > div{
@@ -310,35 +312,40 @@ aside > div span{
   margin: 0.5em 0;
 }
 
-aside > a, #places > div > a{
+#places > div > a, aside > a{
   color: #000000;
   text-decoration: none;
 }
 
-.place-card{
-  display: flex;
-  flex-direction: column;
+#places > div > a > div{
   background-color: #FFFFFF;
   border-radius: 1.5em;
-  padding: 0.4em;
   box-shadow: 0em 0em 0.15em #e9e9e9;
-}
-
-.pic-place{
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  object-fit: cover;
-  width: 220px;
-  height: 110px;
+  padding: 0.4em;
+}
+
+#places > div > a > div img{
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  height: 110px;
+  object-fit: cover;
+  width: 220px;
+}
+
+.info-places{
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
 }
 
 .rank-place, .rank-pop{
+  color: #0065FC;
   font-size: 0.8em;
   padding: 0.5em;
-  color: #0065FC;
 }
 
 .empty-star{
