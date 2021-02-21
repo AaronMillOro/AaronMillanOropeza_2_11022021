@@ -248,7 +248,6 @@ aside{
   background-color: #F2F2F2;
   border-radius: 1.5em;
   grid-area: populars;
-  min-width: 350px;
   padding: 1.5em;
 }
 
@@ -601,5 +600,40 @@ footer div{
     padding: 0.6em;
   }
 
+  /***** MAIN CONTENT *****/
+  main > div{
+    grid-gap: 1em;
+  }
+
+  /* Aside: populars mobile */
+  main > div{
+    grid-template-areas: "populars"
+                         "places";
+    grid-template-columns: 1fr;
+    justify-items: stretch;
+  }
+
+  /* Section: places*/
+  #places{
+    background-color: #FFF;
+  }
+
+  #places > div{
+    flex-direction: column;
+    margin: 0;
+  }
+
+  #places > div > a{
+    margin: 1em 0;
+  }
+
+  #places > div > a > div img{
+    width: 100%;
+  }
+
+  /***** Footer *****/
+  footer{
+    flex-direction: column;
+  }
 
 }
