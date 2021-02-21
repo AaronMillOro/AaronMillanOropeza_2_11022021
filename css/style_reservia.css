@@ -155,9 +155,14 @@ body section{
   padding: 1em;
 }
 
+.search-text{
+  position: relative;
+  right: 50px;
+}
+
 .search-icon{
-  visibility: hidden;
   display: none;
+  visibility: hidden;
 }
 
 #filter-options{
@@ -553,7 +558,7 @@ footer div{
   }
 
   #search-item{
-    justify-content: center;
+    justify-content: stretch;
     width: 100%;
   }
 
@@ -562,11 +567,14 @@ footer div{
   }
 
   .search-text{
-    overflow: hidden;
+    display: none;
     visibility: hidden;
   }
 
   .search-icon{
+    border-radius: 1em;
+    right: 1em;
+    position: relative;
     visibility: visible;
   }
 
@@ -645,8 +653,8 @@ footer div{
   }
 
   .small1, .small2, .medium1, .medium2, .big1, .big2{
-    height: 210px;
     align-self: center;
+    height: 210px;
   }
 
   /***** Footer *****/
