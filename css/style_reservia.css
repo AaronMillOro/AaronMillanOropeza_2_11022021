@@ -139,7 +139,7 @@ body section{
 #search-item input{
   border: 0.1em solid #F2F2F2;
   border-right: 0.1em solid transparent;
-  min-width: 200px;
+  min-width: 270px;
   padding-left: 1em;
 }
 
@@ -153,6 +153,11 @@ body section{
   display: flex;
   font-weight: normal;
   padding: 1em;
+}
+
+.search-icon{
+  visibility: hidden;
+  display: none;
 }
 
 #filter-options{
@@ -187,7 +192,7 @@ body section{
   color: #000000;
   font-size: 1em;
   font-weight: normal;
-  padding: 0.6em 1em 0.6em 2.5em;
+  padding: 0.6em 1em 0.6em 2em;
   text-decoration: none;
 }
 
@@ -198,7 +203,7 @@ body section{
   color: #FFF;
   font-size: 1em;
   font-weight: normal;
-  padding: 0.6em 1em 0.6em 2.5em;
+  padding: 0.6em 1em 0.6em 2em;
   text-decoration: none;
   transition: 700ms ease;
 }
@@ -535,5 +540,66 @@ footer div{
     padding-bottom: 2em;
     width: auto;
   }
+
+  /***** Filters mobile *****/
+  body section{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1em;
+  }
+
+  body section > div{
+    margin: 1em 0;
+  }
+
+  #search-item{
+    justify-content: center;
+    width: 100%;
+  }
+
+  #search-item input{
+    min-width: 75%;
+  }
+
+  .search-text{
+    overflow: hidden;
+    visibility: hidden;
+  }
+
+  .search-icon{
+    visibility: visible;
+  }
+
+  #filter-options > span{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #filter-options a{
+    margin: 0;
+  }
+
+  .icon{
+    left: 0.2;
+    padding: 0.6em;
+  }
+  
+  .filter-button{
+    padding: 0.6em 1em 0.6em 2.5em;
+    margin: 0;
+  }
+  
+  #filter-options a:hover .filter-button{
+    padding: 0.6em 1em 0.6em 2.5em;
+    margin: 0;
+  }
+  
+  #filter-options a:hover .icon{
+    left: 0.2;
+    padding: 0.6em;
+  }
+
 
 }
