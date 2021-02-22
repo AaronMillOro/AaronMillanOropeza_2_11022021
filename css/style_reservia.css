@@ -483,12 +483,37 @@ footer div{
   padding: 1em 0em;
 }
 
+
+/****** TABLETTE STYLE ******/
+@media screen and (max-width: 1030px){
+  header{
+    padding: 0 1.5em;
+  }
+
+  /* Filters */
+  body > section{
+    padding: 0 1.5em;
+  }
+
+  /* Populars*/
+  main > div{
+    grid-template-areas: "populars"
+                         "places";
+    grid-template-columns: 1fr;
+  }
+
+  aside > a > div > img{
+    width: 240px;
+  }
+
+  /* Activities */
+  #activities{
+    padding: 1.5em;
+  }
+}
+
 /****** MOBILE STYLE ******/
 @media screen and (max-width: 768px){
-
-  body{
-    width: 100%;
-  }
 
   /****** Header mobile *****/
   header{
@@ -550,7 +575,6 @@ footer div{
     display: flex;
     justify-content: center;
     margin: 0;
-    padding: 1em;
   }
 
   body section > div{
@@ -619,6 +643,10 @@ footer div{
                          "places";
     grid-template-columns: 1fr;
     justify-items: stretch;
+  }
+
+  aside > a > div > img{
+    width: 130px;
   }
 
   /* Section: places*/
