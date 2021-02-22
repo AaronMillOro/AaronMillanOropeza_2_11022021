@@ -58,7 +58,7 @@ header{
 header img{
   grid-area: logo;
   height: auto;
-  padding: 1em 0em;
+  padding: 1em 0;
   width: 50%; 
 }
 
@@ -177,7 +177,7 @@ body section{
 #filter-options a{
   border: 0.1em solid #F2F2F2;
   border-radius: 2em;
-  padding: 0.6em 0em;
+  padding: 0.6em 0;
   margin: 1.5em;
 }
 
@@ -269,11 +269,11 @@ aside > a > div{
   align-items: stretch;
   background-color: #FFF;
   border-radius: 1.5em;
-  box-shadow: 0em 0em 1em #E9E9E9;
+  box-shadow: 0 0 1em #E9E9E9;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin: 1em 0em;
+  margin: 1em 0;
   padding: 0.4em;
 }
 
@@ -340,7 +340,7 @@ aside > a > div > img{
 #places > div > a > div{
   background-color: #FFF;
   border-radius: 1.5em;
-  box-shadow: 0em 0em 1em #E9E9E9;
+  box-shadow: 0 0 1em #E9E9E9;
   display: flex;
   flex-direction: column;
   padding: 0.4em;
@@ -377,7 +377,7 @@ aside > a > div > img{
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin: 1.5em 0em 2em 0em;
+  margin: 1.5em 0 2em 0;
 }
 
 #block-activities{
@@ -432,7 +432,7 @@ aside > a > div > img{
 .activity-card{
   background-color: #FFF;
   border-radius: 1em;
-  box-shadow: 0em 0em 1em #E9E9E9;
+  box-shadow: 0 0 1em #E9E9E9;
   width: 100%;
 }
 
@@ -479,12 +479,12 @@ footer div{
 }
 
 .foot-title{
-  padding: 1em 0em;
+  padding: 1em 0;
 }
 
 
 /****** TABLETTE STYLE ******/
-@media screen and (max-width: 991.9px){
+@media screen and (max-width: 992px){
   header{
     padding: 0 1.5em;
   }
@@ -512,7 +512,7 @@ footer div{
 }
 
 /****** MOBILE STYLE ******/
-@media screen and (max-width: 767.9px){
+@media screen and (max-width: 768px){
 
   /****** Header mobile *****/
   header{
@@ -521,6 +521,7 @@ footer div{
     grid-template-rows: repeat(2, auto);
     grid-template-areas: "logo inscription" 
                          "nav nav";
+    padding: 0;
   }
 
   header img{
