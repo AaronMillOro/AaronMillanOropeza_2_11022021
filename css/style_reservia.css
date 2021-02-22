@@ -320,8 +320,10 @@ aside > a > div > img{
   margin: 1em 0;
 }
 
-#places > span{
+#places > a{
+  color: #000;
   padding-top: 0.5em;
+  text-decoration: none;
 }
 
 #places > div{
@@ -332,7 +334,7 @@ aside > a > div > img{
   margin: 0.5em 0;
 }
 
-#places > div > a, aside > a{
+#places > div > a, aside > a, footer div a{
   color: #000;
   text-decoration: none;
 }
