@@ -148,6 +148,7 @@ body section{
   color: #FFF;
   display: flex;
   font-weight: normal;
+  justify-content: center;
   padding: 1em;
 }
 
@@ -174,7 +175,7 @@ body section{
 
 /* Filter buttons */
 #filter-options a{
-  border: 0.1em solid #F2F2F2;
+  border: 0.2em solid #F2F2F2;
   border-radius: 2em;
   padding: 0.6em 0;
   margin: 1.5em;
@@ -182,7 +183,7 @@ body section{
 
 .icon{
   background-color: #DEEBFF;
-  border: 0.1em solid #DEEBFF;
+  border: 0.2em solid #DEEBFF;
   border-radius: 50%;
   color: #0065FC;
   left: -0.2em;
@@ -200,7 +201,7 @@ body section{
 
 #filter-options a:hover{
   background-color: #0065FC;
-  border: 0.1em solid transparent;
+  border: 0.2em solid transparent;
   color: #FFF;
   transition: 700ms ease;
 }
@@ -212,13 +213,19 @@ body section{
 
 #filter-options a:hover .icon{
   background-color: #F2F2F2;
-  border: 0.1em solid #F2F2F2;
+  border: 0.2em solid #F2F2F2;
   border-radius: 50%;
   color: #000;
   left: -0.2em;
   padding: 0.6em;
   position: relative;
   transition: 700ms ease;
+}
+
+body > section > div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .mini-icon{
@@ -228,7 +235,7 @@ body section{
   color: #0065FC;
   font-size: 0.75em;
   margin-right: 0.5em;
-  padding: 0.5em 0.8em 0.3em 0.9em;
+  padding: 0.6em;
 }
 
 /***** Main content *****/
@@ -623,6 +630,10 @@ footer{
                          "places";
     grid-template-columns: 1fr;
     justify-items: stretch;
+  }
+
+  aside > a > div, #places > div > a, .activity-card > a {
+    font-size: 0.8em;
   }
 
   aside > a > div > img{
