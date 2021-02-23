@@ -17,8 +17,8 @@
     <header>
       <img src="img/logo/Reservia3x.png" alt="logo">
       <nav>
-        <a href="#places"><div class="nav-btn1">Hébergements</div></a>
-        <a href="#activities"><div class="nav-btn2">Activités</div></a>
+        <a href="#places">Hébergements</a>
+        <a href="#activities">Activités</a>
       </nav>
       <button name="incription" type="button">S'inscrire</button>
     </header>
@@ -27,12 +27,12 @@
     <section>
       <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
       <span class="reg-text">En plein centre ville ou en pleine nature</span>
-      <div id="search-item">
-        <div><i class="fas fa-map-marker-alt"></i></div>
-        <input type="text" value="Marseille, France">
-        <a href="#" class="search-icon"><i class="fas fa-search fa-fw"></i></a>
-        <a href="#" class="search-text">Rechercher</a>
-      </div>
+      <form id="search" action="" method="GET">
+        <button type="button"><i class="fas fa-map-marker-alt fa-fw"></i></button>
+        <input type="text" name="city" value="Marseille, France">
+        <button type="submit" value="submit" class="search-icon"><i class="fas fa-search fa-fw"></i></button>
+        <button type="submit" value="submit" class="search-text"><b>Rechercher</b></button>
+      </form>
       <div id="filter-options">
         <span class="reg-text"><b>Filtres</b></span>
         <a href="#">
@@ -269,21 +269,23 @@
 
     <!-- FOOTER -->
     <footer>
-      <div>
-        <span class="foot-title reg-text"><b>A propos</b></span>
-        <a href="#" class="reg-text">Fonctionnement du site</a>
-        <a href="#" class="reg-text">Conditions générales de vente</a>
-        <a href="#" class="reg-text">Données et confidentialité</a>
-      </div>
-      <div>
-        <span class="foot-title reg-text"><b>Nos hébergements</b></span>
-        <a href="#" class="reg-text">Chartre qualité</a>
-        <a href="#" class="reg-text">Soumettre votre hôtel</a>
-      </div>
-      <div>
-        <span class="foot-title reg-text"><b>Assistance</b></span>
-        <a href="#" class="reg-text">Centre d'aide</a>
-        <a href="#" class="reg-text">Nous contacter</a>
+      <div class="info-footer">
+        <div>
+          <span class="reg-text"><b>A propos</b></span>
+          <a href="#" class="reg-text">Fonctionnement du site</a>
+          <a href="#" class="reg-text">Conditions générales de vente</a>
+          <a href="#" class="reg-text">Données et confidentialité</a>
+        </div>
+        <div>
+          <span class="reg-text"><b>Nos hébergements</b></span>
+          <a href="#" class="reg-text">Chartre qualité</a>
+          <a href="#" class="reg-text">Soumettre votre hôtel</a>
+        </div>
+        <div>
+          <span class="reg-text"><b>Assistance</b></span>
+          <a href="#" class="reg-text">Centre d'aide</a>
+          <a href="#" class="reg-text">Nous contacter</a>
+        </div>
       </div>
     </footer>
   </body>
